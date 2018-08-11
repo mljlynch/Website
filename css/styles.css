@@ -17,21 +17,65 @@ img {
     height: auto;
 }
 
+.container {
+	width: 95%;
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+/* typography
+============*/
+.title {
+    font-size: 2.5rem;
+}
+
+.title span {
+    font-weight: 300;
+    display: block;
+    font-size: .85em;
+}
+ 
+@media (min-width: 60rem){
+    .title {
+        font-size: 3.7rem;
+    }
+}
+.button {
+    display: inline-block;
+    font-size: 1.15 rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.button-accent {
+    color: #00ff6c;
+    border-color: #00ff6c;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background: #00ff6c;
+    columns: #232323;
+}
 /* header
 ============*/
 
 header {
     position: absolute;
-    margin-top: 1em;
+    left:0;
+    right: 0;
+    margin: 1em;
 }
 
-nav {
+nav ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav li {
+nav li{
     display: inline-block;
     margin: 1em;
 }
@@ -50,10 +94,23 @@ nav a:focus {
     color: #D0D
 }
 
+@media (min-width: 60rem) {
+    .logo {
+        float: left;
+    };
+    nav {
+        float: right;
+    
+    }
+}
+
 /* home-hero
 ============*/
 
 .home-hero {
     background-image: url(../img/header.jpg);
-    padding: 10cm 0; 
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0; 
+    color: #fff
 }
