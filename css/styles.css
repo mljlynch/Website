@@ -92,6 +92,7 @@ p {
     margin-bottom: 1.5em;
     font-weight: 900;
     margin-top: 1em;
+    text-align:left;
 }
 
 .title span {
@@ -142,13 +143,13 @@ p {
 }
 
 .button-accent {
-    color: #00ff6c;
-    border-color: #00ff6c;
+    color: #4DD0E1;
+    border-color: #4DD0E1;
 }
 
 .button-accent:hover,
 .button-accent:focus {
-    background: #00ff6c;
+    background: #4DD0E1;
     columns: #232323;
 }
 
@@ -161,7 +162,7 @@ p {
 .button-dark:focus {
 
     background: #232323;
-	color: #00ff6c;
+	color: #4DD0E1;
 
 }
 /* header
@@ -236,13 +237,13 @@ nav a:focus {
     padding: 4em;
     width: 100vw;
     margin-left: -2.5%;
-    outline: 2px solid #00ff6c;
+    outline: 2px solid #4DD0E1;
     outline-offset: -2.5em;
     color: #FFF;
     position:relative;
 }
 .home-about-textbox h1 {
-    color: #00ff6c;
+    color: #4DD0E1;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -297,61 +298,65 @@ nav a:focus {
     }
 }
 
+
 /* portfolio
-================================*/
+=================== */
 
 .portfolio {
-    margin: 3em 0 0;
+	margin: 3em 0 0;
 }
 
-.port-item{
-    margin: 0;
-    position: relative;
+.port-item {
+	margin: 0;
+	position: relative;
 }
 
 .port-item img {
-    display: block;
+	display: block;
 }
 
 .port-desc {
-    position: absolute;
-    z-index: 100;
-    bottom: 0em;
-    left:0;
-    right:0;
-    color: white;
-    background: rgba(0,0,0, .6);
-    padding-bottom: 2em;
+	position: absolute;
+	z-index: 100;
+	bottom: 0em;
+	left: 0em;
+	right: 0em;
+	color: white;
+	background: rgba(0,0,0,.6);
+	padding-bottom: 2em;
 }
 
-@media (min-width:37rem) {
-
-    .port-item{
-        width: 50%;
-    }
+.port-desc p {
+	margin: 1em;
 }
 
-@media (min-width:60rem) {
+@media (min-width: 37rem) {
+	.port-item {
+		width: 50%;
+		float: left;
+	}
+}
 
-    .port-item{
-        width: 33.333334%;
-        overflow:hidden;
-    }
+@media (min-width: 60rem) {
+	.port-item {
+		width: 33.3333334%;
+		overflow: hidden;
+	}
 
-    .port-desc {
-        transform: translateY(150%);
-    }
+	.port-desc {
+		transform: translateY(150%);
+	}
 
-    .port-item:hover .port-desc {
-        transform: translateY(0%);
-    }
+	.port-item:hover .port-desc {
+		transform: translateY(0%);
+	}
 }
 
 /*cta
 =================================*/
 
 .cta  {
-    background-color: #00ff6c;
+    background-color: #4DD0E1;
     padding: 5em 0;
 }
 
